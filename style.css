@@ -1,0 +1,121 @@
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(255, 251, 251);
+    background-image: url('imagens/fundo2.jpg'); /* Adicione a imagem aqui */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.inico {
+    display: flex;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.inico li {
+    margin-right: 20px; /* Espaçamento entre os itens (ajuste conforme necessário) */
+}
+
+.carrinho{
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 10px;    
+}
+
+.logo{
+    width:40px;
+    height: 70px;
+    position: absolute;
+    top: 3px;
+    left: 10px;    
+}
+
+.cabeçalho{
+    background: #f4f4f4;
+    padding: 1.7rem;
+    background-color: rgb(173, 229, 203);
+}
+
+nav{
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Alinha horizontalmente os itens */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    height: 50vh; /* Para ocupar a altura total da tela */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.logopicpay{
+    margin-bottom: -50px; /*distancia entre a logo e a barra de pesquisa*/ 
+    align-items: center;
+    
+}
+
+.logoprincipal{
+    width: 300px;
+    height: auto;
+    
+}
+
+.pesquisa{
+    display: flex;
+}
+
+.barrapesquisa {
+    border-radius: 50px;
+    text-align: center;
+    width: 600px;
+    height: 30px;
+    margin-left: 10px; /* Adiciona um espaço entre a imagem e o input */
+}
+.lupa{
+    width:20px;
+    height: 20px;
+    
+}
+
+form{
+    border-radius: 10px;
+    background: greenyellow;
+    display: flex;
+    justify-content: center;
+    margin: 100px ;
+    padding: 25px;
+    border: 3px solid;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}

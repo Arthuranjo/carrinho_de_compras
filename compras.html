@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="compras.css">
+    <title>Sistema de Carrinho de Compras</title>
+</head>
+<body>
+    <nav class="cabeçalho">
+        <h1>Sistema de Carrinho de Compras</h1>
+    </nav>
+
+    <main>
+        <h2>Buscar Produto</h2>
+        <input type="text" id="produtoNome" placeholder="Nome do produto">
+        <input type="number" id="produtoQuantidade" placeholder="Quantidade" min="1" value="1">
+        <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+
+        <h2>Remover Produto do Carrinho</h2>
+        <input type="text" id="removerNome" placeholder="Nome do produto">
+        <button type="button" onclick="removerDoCarrinho()">Remover do Carrinho</button>
+
+        <h2>Itens no Carrinho</h2>
+        <table id="carrinhoTabela">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+        <h2 id="totalCarrinho">Total da compra: R$ 0.00</h2>
+    </main>
+    <script src="compras.js"></script>
+</body>
+</html>
